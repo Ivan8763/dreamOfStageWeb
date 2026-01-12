@@ -1,0 +1,45 @@
+# Site Build Settings
+
+# jekyll-paginate configuration
+paginate:            5
+
+# Build settings
+markdown:            kramdown
+highlighter:         rouge
+permalink:           /:title
+plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
+title:		           "Dream of Stage"
+description:	       "Dream of Stage Website"
+author:              "Jove Cheng"
+
+# 老師聯絡資訊
+email:               "teacher@example.com"  # 老師的Email
+phone:               "+886 91211428"       # 老師的電話
+location:            "荔枝角青山道608號大南西街榮吉工業大廈B座905室"          # 教學地點
+
+# 社交媒體連結（可選）
+twitter_username:    ""    # 如果老師有Twitter
+github_username:     ""    # 通常用不到
+instagram_username:  "jove_cheng_ecs_vocal_tour"  # 建議放Instagram
+
+# 網站網址（重要！）
+url:                 "https://dreamofstage.netlify.app"  # 你的Netlify網址
+baseurl:             ""  # 保持空白
+
+# SEO 設定（jekyll-seo-tag插件會用到）
+logo:                "/assets/images/city-1.png"  # 網站Logo路徑
+social:
+  name:             "ECS多元流行聲樂用聲法"
+  links:
+    - "https://www.facebook.com/jove.chengcy"
+    - "https://www.youtube.com"
+
+# RSS 2.0 can be used instead of Atom by uncommenting following two lines
+#feed:
+#  path: rss-feed.xml

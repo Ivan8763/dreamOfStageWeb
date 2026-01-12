@@ -1,0 +1,42 @@
+# Change 'comments' to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: 'ECS多元流行聲樂系統'
+
+# If you are not using Google Analytics, please change 'google-ID' to an empty string
+google-ID: ''
+
+menu:
+#- {name: 'Interesting Facts',  url: 'facts'}
+#- {name: 'Learning Resources', url: 'resources'}
+#- {name: 'Sample Posts',       url: 'sample-posts'}
+#- {name: 'Documentation',      url: 'documentation'}
+#- {name: 'About',              url: 'about'}
+#- {name: 'Contact',            url: 'contact'}
+- {name: '首頁',          url: 'index'}
+- {name: '課程',          url: 'courses'}
+- {name: '學生活動',      url: 'portfolio'}
+- {name: '歌唱比賽',      url: 'competition'}
+- {name: '實例分享',      url: 'sharing'}
+- {name: '關於老師',      url: 'about'}
+- {name: '聯絡我們',      url: 'contact'}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+social:
+#- {icon: 'twitter', link:    'https://twitter.com'}
+- {icon: 'facebook', link:   'https://www.facebook.com/jove.chengcy'}
+- {icon: 'instagram', link:  'https://instagram.com/jove_cheng_ecs_vocal_tutor'}
+#- {icon: 'envelope', link:   'mailto:hello@paulle.ca'}
+#- {icon: 'rss-square', link: 'feed.xml'}
+#- {icon: 'rss-square', link: 'rss-feed.xml'}
+
+# Customize site text
+pagination:
+  next_page: '較新的文章'
+  previous_page: '較舊的文章'
+
+sharing_button_prompt: '歡迎分享！'
+
+related_posts: '你可能也會喜歡...'
+
+post_date_prefix: '發布於'
