@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+collections:
+  - name: "posts"
+    label: "最新消息"
+    folder: "_posts"          # ← 加底線
+    create: true
+    fields:
+      - {label: "標題", name: "title", widget: "string"}
+      - {label: "發布日期", name: "date", widget: "datetime"}
+      - {label: "封面圖片", name: "image", widget: "image", required: false}
+      - {label: "內容", name: "body", widget: "markdown"}
+
+  - name: "courses"
+    label: "課程介紹"
+    folder: "_courses"        # ← 加底線
+    create: true
+    fields:
+      - {label: "課程名稱", name: "title", widget: "string"}
+      - {label: "課程類別", name: "category", widget: "string", default: "成人課程"}
+      - {label: "上課時間", name: "schedule", widget: "string"}
+      - {label: "學費", name: "price", widget: "string"}
+      - {label: "課程圖片", name: "image", widget: "image", required: false}
+      - {label: "課程詳情", name: "body", widget: "markdown"}
+
+  - name: "pages"
+    label: "頁面內容"
+    folder: "pages"
+    create: false
+    fields:
+      - {label: "標題", name: "title", widget: "string"}
+      - {label: "永久連結", name: "permalink", widget: "hidden"}
+      - {label: "內容", name: "body", widget: "markdown"}
