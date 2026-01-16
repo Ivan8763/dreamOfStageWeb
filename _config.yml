@@ -14,13 +14,13 @@ sass:
   style: compressed
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           "Dream of Stage"
-description:	       "Dream of Stage Website"
+title:		           "ECS多元流行聲樂系統"
+description:	       "用聲法、歌唱技巧、舞台表現、音樂理論、錄音製作"
 author:              "Jove Cheng"
 
 # 老師聯絡資訊
 email:               "teacher@example.com"  # 老師的Email
-phone:               "+886 91211428"       # 老師的電話
+phone:               "+852 59454625"       # 老師的電話
 location:            "荔枝角青山道608號大南西街榮吉工業大廈B座905室"          # 教學地點
 
 # 社交媒體連結（可選）

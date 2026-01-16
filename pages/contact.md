@@ -1,7 +1,10 @@
 ---
 layout: page
-title: Contact
+title: 聯絡我們
 permalink: /contact
 ---
 
-This theme is completely free and open source software. You may use it however you want, as it is distributed under the [MIT License](http://choosealicense.com/licenses/mit/). If you are having any problems, any questions or suggestions, feel free to [tweet at me](https://twitter.com/intent/tweet?text=My%question%about%Millennial%is:%&amp;via=paululele), or [file a GitHub issue](https://github.com/lenpaul/Millennial/issues/new).
+<p>校長：鄭則仁老師 (Jove Cheng)</p>
+<p>電郵：???</p>
+<p>電話：+852 59454625</p>
+<p>地址：荔枝角青山道608號大南西街榮吉工業大廈B座905室</p>

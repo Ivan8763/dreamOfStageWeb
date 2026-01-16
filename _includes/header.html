@@ -3,9 +3,23 @@
     <a href="{{ site.github.url }}/">{{ site.title }}</a>
   </h3>
   <nav class="menu-list">
-    {% for item in site.data.settings.menu %}
-      <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name }}</a>
-    {% endfor %}
+    {% if page.url contains '/DreamArts/' %}
+      {% for item in site.data.settings.DreamArts_menu %}
+        <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name }}</a>
+      {% endfor %}
+    {% elsif page.url contains '/DreamOfStage/' %}
+      {% for item in site.data.settings.DreamOfStage_menu %}
+        <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name }}</a>
+      {% endfor %}
+    {% elsif page.url contains '/ECS/' %}
+      {% for item in site.data.settings.ECS_menu %}
+        <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name }}</a>
+      {% endfor %}
+    {% else %}
+      {% for item in site.data.settings.default_menu %}
+        <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name }}</a>
+      {% endfor %}
+    {% endif %}
     {% for item in site.data.settings.social %}
       <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
     {% endfor %}
