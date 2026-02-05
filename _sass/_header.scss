@@ -92,3 +92,66 @@
     background-color: #f1f1f1;
   }
 }
+
+/* ====== 音樂主題導航列 ====== */
+
+.site-header {
+  background: $transparent-dark !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid $music-gold;
+  box-shadow: 0 5px 20px rgba(255, 215, 0, 0.2);
+}
+
+.site-title {
+  color: $music-gold !important;
+  font-weight: bold;
+  
+  &::before {
+    content: "🎤 ";
+  }
+}
+
+.menu-list {
+  .menu-link {
+    color: $music-light !important;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    
+    &:hover {
+      background: $transparent-gold;
+      color: $music-gold !important;
+      transform: translateY(-2px);
+      
+      &::before {
+        content: "♪";
+        position: absolute;
+        left: -10px;
+        animation: $pulse-animation;
+      }
+    }
+  }
+}
+
+// 下拉選單音樂化
+.dropbtn {
+  background: $transparent-dark !important;
+  color: $music-gold !important;
+  border: 1px solid $music-gold;
+}
+
+.dropdown-content {
+  background: $stage-deep !important;
+  border: 1px solid $music-gold;
+  
+  a {
+    color: $music-light !important;
+    
+    &:hover {
+      background: $transparent-gold !important;
+      color: $music-gold !important;
+    }
+  }
+}

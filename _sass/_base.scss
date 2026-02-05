@@ -120,3 +120,125 @@ th, td {
   padding: 15px;
   text-align: left;
 }
+
+/* ====== 音樂主題基礎樣式 ====== */
+
+// 音樂背景
+body {
+  background: linear-gradient(135deg, $stage-dark 0%, $stage-purple 50%, $stage-deep 100%);
+  color: #f0f0f0;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  
+  // 添加音符紋理
+  &::before {
+    content: "♪ ♫ ♬ ♪ ♫ ♬";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.03);
+    z-index: -1;
+    animation: notesFlow 40s linear infinite;
+  }
+}
+
+// 音樂化標題
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+  
+  &::before {
+    content: "🎵 ";
+    opacity: 0.7;
+    margin-right: 10px;
+  }
+}
+
+h1 {
+  color: $music-gold;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  
+  &::before, &::after {
+    content: " ♪ ";
+    animation: $pulse-animation;
+  }
+}
+
+h2 {
+  color: $music-gold;
+  border-left: 4px solid $music-gold;
+  padding-left: 15px;
+  margin-top: 2rem;
+}
+
+h3 {
+  color: $music-light;
+}
+
+// 音樂化連結
+a {
+  color: $music-light;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  
+  &:hover {
+    color: $music-gold;
+    
+    &::after {
+      content: " ♫";
+      position: absolute;
+      opacity: 0.7;
+    }
+  }
+}
+
+// 音樂化列表
+ul, ol {
+  li {
+    position: relative;
+    padding-left: 25px;
+    
+    &::before {
+      content: "♪";
+      position: absolute;
+      left: 0;
+      color: $music-gold;
+      opacity: 0.5;
+    }
+  }
+}
+
+// 浮動音符動畫
+@keyframes notesFlow {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}

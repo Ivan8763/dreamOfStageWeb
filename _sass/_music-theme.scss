@@ -1,0 +1,21 @@
+// 音樂主題配色
+$stage-dark: #0f0c29;
+$stage-purple: #302b63;
+$stage-deep: #24243e;
+$music-gold: #ffd700;
+$music-light: #a3d9ff;
+$music-accent: #ff8a00;
+
+// 品牌顏色（可對應三個品牌）
+$brand-ecs: #ff6b6b;      // 紅色系
+$brand-dream: #4ecdc4;    // 青色系
+$brand-stage: #45b7d1;    // 藍色系
+
+// 透明層次
+$transparent-dark: rgba(0, 0, 0, 0.7);
+$transparent-light: rgba(255, 255, 255, 0.1);
+$transparent-gold: rgba(255, 215, 0, 0.3);
+
+// 動畫
+$float-animation: float 3s infinite ease-in-out;
+$pulse-animation: pulse 2s infinite;

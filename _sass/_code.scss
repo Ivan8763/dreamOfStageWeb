@@ -58,3 +58,24 @@ pre code {
   background-color: transparent;
   border-radius: 0;
 }
+
+/* ====== 音樂主題代碼區 ====== */
+
+code, pre {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border-left: 3px solid $music-gold;
+}
+
+.highlight {
+  position: relative;
+  
+  &::before {
+    content: "</>";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: $music-gold;
+    opacity: 0.5;
+    font-size: 0.8rem;
+  }
+}

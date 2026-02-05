@@ -94,3 +94,47 @@
     width: 95vw;
   }
 }
+
+/* ====== 音樂主題文章 ====== */
+
+.post-content {
+  background: $transparent-light;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid $transparent-gold;
+  padding: 2.5rem;
+  
+  // 文章日期音樂化
+  .post-date {
+    color: $music-gold;
+    font-weight: bold;
+    
+    &::before {
+      content: "📅 ";
+    }
+  }
+}
+
+// 分享按鈕音樂化
+.sharing-icons a {
+  display: inline-block;
+  background: $transparent-light;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 5px;
+  border: 1px solid $transparent-gold;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: $transparent-gold;
+    transform: translateY(-5px);
+    
+    &::after {
+      content: " ♪";
+      font-size: 0.8rem;
+    }
+  }
+}

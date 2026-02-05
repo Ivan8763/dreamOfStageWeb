@@ -27,3 +27,75 @@
   color: #9a9a9a;
   font-size:0.8rem;
 }
+
+.footer {
+  background: linear-gradient(45deg, $stage-dark, $stage-purple) !important;
+  color: $music-gold !important;
+  text-align: center;
+  min-height: 150px;
+  padding: 2rem 0;
+  width: $container-width;
+  position: relative;
+  border-top: 3px solid $music-gold;
+  margin-top: 4rem;
+  
+  // 音符裝飾
+  &::before {
+    content: "♫ ♪ ♬ ♫ ♪ ♬";
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    opacity: 0.1;
+    font-size: 20px;
+    letter-spacing: 10px;
+  }
+}
+
+.footer a {
+  color: $music-light !important;
+  padding: 0 15px;
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+  
+  &:hover {
+    color: $music-gold !important;
+    
+    &::after {
+      content: " ♫";
+      opacity: 0.7;
+    }
+  }
+}
+
+.footer-description {
+  display: block;
+  margin: 1rem 0;
+  color: $music-light;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+// 音樂圖標行
+.music-icons {
+  font-size: 2rem;
+  margin: 1rem 0;
+  
+  span {
+    margin: 0 10px;
+    animation: $float-animation;
+    
+    &:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+    &:nth-child(3) {
+      animation-delay: 1s;
+    }
+  }
+}
+
+@media (max-width: $container-width) {
+  .footer {
+    width: 95vw;
+  }
+}

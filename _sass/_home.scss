@@ -54,3 +54,50 @@
 .pagination-active:hover {
   background-color: #e0e0e0;
 }
+
+/* ====== 音樂主題首頁 ====== */
+
+// 特色文章音樂化
+.featured-post {
+  border-radius: 15px;
+  overflow: hidden;
+  border: 2px solid $transparent-gold;
+  position: relative;
+  
+  &::before {
+    content: "♫";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: $music-gold;
+    opacity: 0.5;
+    z-index: 2;
+  }
+  
+  h2 span {
+    background: $transparent-dark !important;
+    backdrop-filter: blur(5px);
+    border: 1px solid $music-gold;
+  }
+}
+
+// 分頁器音樂化
+.pagination-button {
+  background: $transparent-light;
+  border: 1px solid $music-gold;
+  color: $music-light;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: $transparent-gold;
+    color: $music-gold;
+    transform: translateY(-3px);
+  }
+}
+
+.pagination-active {
+  background: $music-gold !important;
+  color: $stage-dark !important;
+}
